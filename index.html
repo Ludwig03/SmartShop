@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://kit.fontawesome.com/f6b55d19e8.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>SmartShop</title>
+</head>
+<body>
+  
+  
+	<div class="navbar navbar-expand-lg navbar-light" style="  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bbd2c5, #536976);">
+		<div class="container-fluid">
+			<div class="col-md-7 d-md-block d-none">
+          		<a class="navbar-brand col-md-5" href="#">Tel:+374 99 999 999</a>
+          		<a class="navbar-brand col-md-5" href="#">Welcome to our store</a>
+        	</div>
+				<form class="col-md-5">
+			          <div class="form-row align-items-center">
+			            <div class="col-md-4 col-6 my-1">
+			              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+			              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+			                <option selected>AM</option>
+			                <option value="RU">RU</option>
+			                <option value="EN">EN</option>
+			              </select>
+			            </div>
+			            <div class="col-md-4 col-6 my-1">
+			              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+			                <option selected>&#36;</option>
+			                <option value="RU">&euro;</option>
+			                <option value="DR">	&#1423;</option>
+			              </select>
+			            </div>
+			            <div class="col-md-4 m-auto d-md-block d-none">
+			              <button type="button" class="btn btn-warning col-md-12">
+			                Wishlist <span class="badge badge-dark bg-danger">3</span>
+			              </button>  
+			            </div>          
+			          </div>
+		        </form>
+		</div>
+	</div>
+	<div class="navbar navbar-expand-md navbar-info bg-dark justify-content-between">
+		<div class="col-md-auto col-9">
+           <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+ <a class="navbar-brand" href="#">
+    <img src="https://smartshop.mk/wp-content/uploads/2018/03/Smartshop-logo-master.png" width="70" class="d-inline-block align-top" alt="">
+    SmartShop
+  </a>
+</nav>
+        </div>
+        <div class="col-md-9 col-3 d-md-flex justify-content-around">
+          <div class="row w-100 justify-content-end mr-2">
+          <div class="col-auto">
+            <form class="form-inline d-md-inline-block d-none">
+              <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+            </div></div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              My account
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Login</a>
+              <a class="dropdown-item" href="#">Register</a>
+              <a class="dropdown-item" href="#">My Orders</a>
+              <a class="dropdown-item" href="#">Account Settings</a>
+            </div>
+          </div>  
+        </div>
+	</div>
+ <nav class="navbar navbar-expand-md navbar-light"style="  background: #ff512f;
+background: -webkit-linear-gradient(to right, #ff512f, #f09819); 
+background: linear-gradient(to right, #ff512f, #f09819);">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav w-100 d-flex justify-content-between">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Technika
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Computer</a>
+          <a class="dropdown-item" href="#">Laptop</a>
+          <a class="dropdown-item" href="#">Camputer Aksesuar</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mobile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Phone</a>
+          <a class="dropdown-item" href="#">Best saler</a>
+          <a class="dropdown-item" href="#">Phone Aksesuar</a>
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          TV
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Soundbar speakers</a>
+          <a class="dropdown-item" href="#">Console Gaming</a>
+          <a class="dropdown-item" href="#">TV Aksesuar</a>
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Pro Audio
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Microphones</a>
+          <a class="dropdown-item" href="#">Audio for video</a>
+          <a class="dropdown-item" href="#">Studio recording</a>
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Pro video
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Camcorders</a>
+          <a class="dropdown-item" href="#">Digital Cine Cameras</a>
+          <a class="dropdown-item" href="#">PTZ Cameras</a>
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Audio-Visual
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Projectors</a>
+          <a class="dropdown-item" href="#">Projection Screens</a>
+          <a class="dropdown-item" href="#">Video presenters</a>
+        </div>
+      </li> 
+    </ul>
+  </div>
+</nav>  
+  
+  
+ <div id="carouselExampleIndicators" class="carousel slide d-md-block d-none" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      	<div class="row" style="  background: #ff512f;
+background: -webkit-linear-gradient(to right, #ff512f, #f09819); 
+background: linear-gradient(to right, #ff512f, #f09819);">
+			      		<div class="col-md-6">
+			      			<img src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<div class="row" style="position: relative;top: 150px;left: 100px;"> <h2 class="text-secondary">IPhone 11 Pro Max</h2> </div>
+			      			<div class="row" style="position: relative;top: 165px;left: 100px;"> <h3 class="text-secondary">$999.00</h3></div>
+			      			<div class="row">
+			      				<button type="button" class="btn btn-outline-dark col-md-3 d-none d-md-block" style="position: relative;top: 180px;left: 100px;">Add To Card &nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart"></i></button>
+			      			</div>
+			      		</div>
+			      	</div>
+			    </div>
+			    <div class="carousel-item">
+			     			      	<div class="row" style="  background: #ff512f;
+background: -webkit-linear-gradient(to right, #ff512f, #f09819); 
+background: linear-gradient(to right, #ff512f, #f09819);">
+			      		<div class="col-md-6">
+			      			<img src="https://cdn.shopify.com/s/files/1/0051/8301/2928/products/samsung_s20_dual_65e2816e-56dc-4f3d-a089-d1821770bab9_330x.png?v=1584040248" style="position: relative;left: 150px;">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<div class="row" style="position: relative;top: 150px;left: 100px;"> <h2 class="text-secondary">Galaxy S20</h2> </div>
+			      			<div class="row" style="position: relative;top: 165px;left: 100px;"> <h3 class="text-secondary">$999.00</h3></div>
+			      			<div class="row">
+			      				<button type="button" class="btn btn-outline-dark col-md-3 d-none d-md-block" style="position: relative;top: 180px;left: 100px;">Add To Card &nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart"></i></button>
+			      			</div>
+			      		</div>
+			      	</div>
+			    </div>
+			    <div class="carousel-item">
+			      <div class="carousel-item active">
+			      				      <div class="row" style="  background: #ff512f;
+background: -webkit-linear-gradient(to right, #ff512f, #f09819); 
+background: linear-gradient(to right, #ff512f, #f09819);">
+			      		<div class="col-md-6">
+			      			<img src="https://c.dns-shop.ru/thumb/st1/fit/800/650/2c3d9edc875f47c20a26768551ad181a/5784fc7cfe477ae7100e33d48abc277f39e9cf15e8706a2ce957bf52d26f7df1.png">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<div class="row" style="position: relative;top: 150px;left: 100px;"> <h2 class="text-secondary">IMac Pro Retina 5K </h2> </div>
+			      			<div class="row" style="position: relative;top: 165px;left: 100px;"> <h3 class="text-secondary">$4,999.00</h3></div>
+			      			<div class="row">
+			      				<button type="button" class="btn btn-outline-dark col-md-3 d-none d-md-block" style="position: relative;top: 180px;left: 100px;">Add To Card &nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart"></i></button>
+			      			</div>
+			      		</div>
+			      	</div>
+			    </div>
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+		</div>
+    <div class="main-row3 mt-5">
+          <div class="row" style="background: #e65c00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e65c00, #f9d423); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e65c00, #f9d423);">
+            <h1 class="col-12 text-uppercase text-center">daily sales</h1>
+          </div>
+          <div class="row row2 justify-content-center" style="background: #e65c00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e65c00, #f9d423); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e65c00, #f9d423);" >
+            <div class="col1 mb-3 mr-2">
+              <div class="card daily-card bg-dark">
+                <img class="daily-card-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="text-center text-warning">IPhone 11 Pro Max</h5>
+                  <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
+                  <h4 class="text-center text-success">$999.00</h4>
+                  <a class="btn btn-warning mt-2 text-center" href="#">Add To Card</a>
+                </div>
+              </div>
+            </div>
+            <div class="col2 mb-3 mr-2">
+              <div class="card daily-card bg-dark">
+                <img class="daily-card-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="text-center text-warning">IPhone 11 Pro Max</h5>
+                  <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
+                  <h4 class="text-center text-success">$999.00</h4>
+                  <a class="btn btn-warning mt-2 text-center" href="#">Add To Card</a>
+                </div>
+              </div>
+            </div>
+            <div class="col3 mb-3 mr-2">
+              <div class="card daily-card bg-dark">
+                <img class="daily-card-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="text-center text-warning">IPhone 11 Pro Max</h5>
+                  <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
+                  <h4 class="text-center text-success">$999.00</h4>
+                  <a class="btn btn-warning mt-2 text-center" href="#">Add To Card</a>
+                </div>
+              </div>
+            </div>
+            <div class="col4 mb-3 mr-2">
+              <div class="card daily-card bg-dark">
+                <img class="daily-card-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="text-center text-warning">IPhone 11 Pro Max</h5>
+                  <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
+                  <h4 class="text-center text-success">$999.00</h4>
+                  <a class="btn btn-warning mt-2 text-center" href="#">Add To Card</a>
+                </div>
+              </div>
+            </div>
+            <div class="col5 mb-3 mr-2">
+              <div class="card daily-card bg-dark">
+                <img class="daily-card-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="text-center text-warning">IPhone 11 Pro Max</h5>
+                  <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
+                  <h4 class="text-center text-success">$999.00</h4>
+                  <a class="btn btn-warning mt-2 text-center" href="#">Add To Card</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="main-row4 my-3">
+            <div class="row row1 bg-secondary">
+              <h1 class="col-12 text-center text-uppercase">Our Products</h1>
+            </div>
+            <div class="row bg-secondary justify-content-center">
+              <div class="row row1 col-12 justify-content-center">
+                  <div class="col1">
+                    <div class="card our-product-card bg-dark">
+                      <img class="our-product-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                      <div class="card-body bg-dark">
+                        <a class="btn-sm btn-outline-warning mt-2 text-center" href="#">Open</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <div class="card our-product-card bg-dark">
+                      <img class="our-product-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                      <div class="card-body bg-dark">
+                        <a class="btn-sm btn-outline-warning mt-2 text-center" href="#">Open</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div class="card our-product-card bg-dark">
+                      <img class="our-product-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                      <div class="card-body bg-dark">
+                        <a class="btn-sm btn-outline-warning mt-2 text-center" href="#">Open</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col4">
+                  <div class="card our-product-card bg-dark">
+                    <img class="our-product-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                      <a class="btn-sm btn-outline-warning mt-2 text-center" href="#">Open</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col5">
+                  <div class="card our-product-card bg-dark">
+                    <img class="our-product-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                      <a class="btn-sm btn-outline-warning mt-2 text-center" href="#">Open</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col6">
+                  <div class="card our-product-card bg-dark">
+                    <img class="our-product-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                      <a class="btn-sm btn-outline-warning mt-2 text-center" href="#">Open</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row2 my-2 col-12 justify-content-center">
+                <div class="col1">
+                  <div class="card our-product-card bg-dark">
+                    <img class="our-product-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                      <a class="btn-sm btn-outline-warning mt-2 text-center" href="#">Open</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col2">
+                  <div class="card our-product-card bg-dark">
+                    <img class="our-product-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                      <a class="btn-sm btn-outline-warning mt-2 text-center" href="#">Open</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col3">
+                  <div class="card our-product-card bg-dark">
+                    <img class="our-product-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                      <a class="btn-sm btn-outline-warning mt-2 text-center" href="#">Open</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col4">
+                  <div class="card our-product-card bg-dark">
+                    <img class="our-product-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                      <a class="btn-sm btn-outline-warning mt-2 text-center" href="#">Open</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col5">
+                  <div class="card our-product-card bg-dark">
+                    <img class="our-product-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                      <a class="btn-sm btn-outline-warning mt-2 text-center" href="#">Open</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col6">
+                  <div class="card our-product-card bg-dark">
+                    <img class="our-product-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                    <div class="card-body bg-dark">
+                      <a class="btn-sm btn-outline-warning mt-2 text-center" href="#">Open</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="main-row5">
+            <div class="row row1 header-main-row5" style="background: #cc2b5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cc2b5e, #753a88); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cc2b5e, #753a88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+CLICK TO COPY">
+              <h1 class="col-12 text-center text-uppercase">We got new products</h1>
+            </div>
+            <div class="row row2 ">
+              <div class="col1 col-12 col-md-4 col-lg-2 mb-3">
+                <div class="card new-poduct-card" style="  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bbd2c5, #536976);">
+                  <img class="new-product-card-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="text-center text-dark">IPhone 11 Pro Max</h5>
+      <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
+                  <h4 class="text-center text-success">$999.00</h4>
+                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="#">Add to Card</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col2 col-12 col-md-4 col-lg-2 mb-3">
+                <div class="card new-poduct-card" style="  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bbd2c5, #536976);">
+                  <img class="new-product-card-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="text-center text-dark">IPhone 11 Pro Max</h5>
+        <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
+                  <h4 class="text-center text-success">$999.00</h4>
+                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="#">Add to Card</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col3 col-12 col-md-4 col-lg-2 mb-3">
+                <div class="card new-poduct-card" style="  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bbd2c5, #536976);">
+                  <img class="new-product-card-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="text-center text-dark">IPhone 11 Pro Max</h5>
+           <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
+                  <h4 class="text-center text-success">$999.00</h4>
+                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="#">Add to Card</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col4 col-12 col-md-4 col-lg-2 mb-3">
+                <div class="card new-poduct-card" style="  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bbd2c5, #536976);" >
+                  <img class="new-product-card-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="text-center text-dark">IPhone 11 Pro Max</h5>
+          <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
+                  <h4 class="text-center text-success">$999.00</h4>
+                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="#">Add to Card</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col5 col-12 col-md-4 col-lg-2 mb-3">
+                <div class="card new-poduct-card" style="  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bbd2c5, #536976);">
+                  <img class="new-product-card-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="text-center text-dark">IPhone 11 Pro Max</h5>
+        <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
+                  <h4 class="text-center text-success">$999.00</h4>
+                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="#">Add to Card</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col6 col-12 col-md-4 col-lg-2 mb-3">
+                <div class="card new-poduct-card" style="  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bbd2c5, #536976);">
+                  <img class="new-product-card-img" src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="text-center text-dark">IPhone 11 Pro Max</h5>
+           <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
+                  <h4 class="text-center text-success">$999.00</h4>
+                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="#">Add to Card</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  </div>
+  
+  <div class="content_detail__pagination cdp "style="background: #cc2b5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cc2b5e, #753a88); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cc2b5e, #753a88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+CLICK TO COPY" actpage="1">
+			<a href="#!-1" class="cdp_i">prev</a>
+			<a href="#!1" class="cdp_i">1</a>
+			<a href="#!2" class="cdp_i">2</a>
+			<a href="#!3" class="cdp_i">3</a>
+			<a href="#!4" class="cdp_i">4</a>
+			<a href="#!5" class="cdp_i">5</a>
+			<a href="#!+1" class="cdp_i">next</a>
+		</div>
+
+  <footer class="page-footer font-small stylish-color-dark pt-4 navbar-dark bg-dark">
+
+  <div class="container text-center text-md-left">
+
+    <div class="row">
+
+      <div class="col-md-4 mx-auto">
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, similique iure? Illum beatae, quo doloremque ad unde obcaecati.
+        </p>
+
+      </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <div class="col-md-2 mx-auto">
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <div class="col-md-2 mx-auto">
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+
+      <div class="col-md-2 mx-auto">
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <hr>
+
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register for free</h5>
+    </li>
+    
+ <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+    Login
+  </button>  
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content"style="background: #ff512f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff512f, #dd2476); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff512f, #dd2476);">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <div class="form-title text-center" >
+          <h4>Log in</h4>
+        </div>
+        <div class="d-flex flex-column text-center" >
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password1" placeholder="Your password...">
+            </div>
+            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+          </form>
+          
+          <div class="text-center text-muted delimiter">or use a social network</div>
+          <div class="d-flex justify-content-center social-buttons">
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+              <i class="fab fa-linkedin"></i>
+            </button>
+          </di>
+        </div>
+      </div>
+    </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+      </div>
+  </div>
+</div>
+    
+    </div>
+    
+
+  <hr>
+    
+    <div class="social-icons">
+  <a class="social-icon social-icon--codepen">
+    <i class="fa fa-codepen"></i>
+    <div class="tooltip">Codepen</div>
+  </a>
+  <a class="social-icon social-icon--github">
+    <i class="fa fa-github"></i>
+    <div class="tooltip">Github</div>
+  </a>
+  <a class="social-icon social-icon--twitter">
+    <i class="fa fa-twitter"></i>
+    <div class="tooltip">Twitter</div>
+  </a>
+  <a class="social-icon social-icon--dribbble">
+    <i class="fa fa-dribbble"></i>
+    <div class="tooltip">Dribbble</div>
+  </a>
+  <a class="social-icon social-icon--instagram">
+    <i class="fa fa-instagram"></i>
+    <div class="tooltip">Instagram</div>
+  </a>
+  <a class="social-icon social-icon--linkedin">
+    <i class="fa fa-linkedin"></i>
+    <div class="tooltip">LinkedIn</div>
+  </a>
+  <a class="social-icon social-icon--facebook">
+    <i class="fa fa-facebook"></i>
+    <div class="tooltip">Facebook</div>
+  </a>
+</div>
+
+  </div>
+  <!-- Footer Elements -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-dark">© SmartShop
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    </div>  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
