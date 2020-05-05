@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Shop</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/f6b55d19e8.js" crossorigin="anonymous"></script>
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/flaticon.css"/>
+	<link rel="stylesheet" href="css/slicknav.min.css"/>
+	<link rel="stylesheet" href="css/jquery-ui.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body style="background: #757f9a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #757f9a, #d7dde8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #757f9a, #d7dde8);">
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<div  class="navbar navbar-expand-lg navbar-light" style="  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bbd2c5, #536976); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bbd2c5, #536976);">
+		<div class="container-fluid">
+			<div class="col-md-7 d-md-block d-none">
+          		<a class="navbar-brand col-md-5" href="#">Tel:+374 99 999 999</a>
+          		<a class="navbar-brand col-md-5" href="#">Welcome to our store</a>
+        	</div>
+				<form class="col-md-5">
+			          <div class="form-row align-items-center">
+			            <div class="col-md-4 col-6 my-1">
+			              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+			              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+			                <option selected>AM</option>
+			                <option value="RU">RU</option>
+			                <option value="EN">EN</option>
+			              </select>
+			            </div>
+			            <div class="col-md-4 col-6 my-1">
+			              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+			                <option selected>&#36;</option>
+			                <option value="RU">&euro;</option>
+			                <option value="DR">	&#1423;</option>
+			              </select>
+			            </div>
+			            <div class="col-md-4 m-auto d-md-block d-none">
+			              <button type="button" class="btn btn-warning col-md-12">
+			                Wishlist <span class="badge badge-dark bg-danger">3</span>
+			              </button>  
+			            </div>          
+			          </div>
+		        </form>
+		</div>
+	</div>
+	<div class="navbar navbar-expand-md navbar-info bg-dark justify-content-between">
+		<div class="col-md-auto col-7">
+           <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+ <a class="navbar-brand" href="index.html">
+    <img src="https://smartshop.mk/wp-content/uploads/2018/03/Smartshop-logo-master.png" width="180" class="d-inline-block align-top" alt="">
+  </a>
+</nav>
+        </div>
+        <div class="col-md-9 col-5 d-md-flex justify-content-around">
+          <div class="row w-100 justify-content-end mr-2">
+          <div class="col-auto">
+            <form class="form-inline d-md-inline-block d-none">
+              <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+            </div></div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              My account
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Login</a>
+              <a class="dropdown-item" href="#">Register</a>
+              <a class="dropdown-item" href="#">My Orders</a>
+              <a class="dropdown-item" href="#">Account Settings</a>
+            </div>
+          </div>  
+        </div>
+	</div>
+ <nav class="navbar navbar-expand-md navbar-light"style="  background: #ff512f;
+background: -webkit-linear-gradient(to right, #ff512f, #f09819); 
+background: linear-gradient(to right, #ff512f, #f09819);">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav w-100 d-flex justify-content-between">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Technika
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Computer.html">Computer</a>
+          <a class="dropdown-item" href="Laptop.html">Laptop</a>
+          <a class="dropdown-item" href="CamputerAksesuar">Computer Aksesuar</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mobile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Phone</a>
+          <a class="dropdown-item" href="#">Best saler</a>
+          <a class="dropdown-item" href="#">Phone Aksesuar</a>
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          TV
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Soundbar speakers</a>
+          <a class="dropdown-item" href="#">Console Gaming</a>
+          <a class="dropdown-item" href="#">TV Aksesuar</a>
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Pro Audio
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Microphones</a>
+          <a class="dropdown-item" href="#">Audio for video</a>
+          <a class="dropdown-item" href="#">Studio recording</a>
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Pro video
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Camcorders</a>
+          <a class="dropdown-item" href="#">Digital Cine Cameras</a>
+          <a class="dropdown-item" href="#">PTZ Cameras</a>
+        </div>
+      </li> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Audio-Visual
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Projectors</a>
+          <a class="dropdown-item" href="#">Projection Screens</a>
+          <a class="dropdown-item" href="#">Video presenters</a>
+        </div>
+      </li> 
+    </ul>
+  </div>
+</nav>  
+	<!-- Header section end -->
+
+
+	<!-- Page info -->
+	<div style="background: #cc95c0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cc95c0, #dbd4b4, #7aa1d2); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cc95c0, #dbd4b4, #7aa1d2);" class="page-top-info">
+		<div class="container">
+			<h4>Technika</h4>
+			<div class="site-pagination">
+				<a href="index.html">Home</a> /
+				<a href="computer.html">Computer</a> /
+			</div>
+		</div>
+	</div>
+	<!-- Page info end -->
+
+
+	<!-- Category section -->
+	<section class="category-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 order-2 order-lg-1">
+					<div class="filter-widget">
+						<h2 class="fw-title">Categories</h2>
+						<ul class="category-menu">
+							<li><a href="#">Technika</a>
+								<ul class="sub-menu">
+									<li><a href="#">Computer<span>(23)</span></a></li>
+									<li><a href="#">Laptop<span>(16)</span></a></li>
+									<li><a href="#">Computer Aksesuar<span>(36)</span></a></li>
+								</ul>
+							</li>
+							<li><a href="#">Man Wear</a>
+								<ul class="sub-menu">
+									<li><a href="#">Midi Dresses <span>(2)</span></a></li>
+									<li><a href="#">Maxi Dresses<span>(56)</span></a></li>
+									<li><a href="#">Prom Dresses<span>(36)</span></a></li>
+								</ul></li>
+							<li><a href="#">Children</a></li>
+							<li><a href="#">Bags & Purses</a></li>
+							<li><a href="#">Eyewear</a></li>
+							<li><a href="#">Footwear</a></li>
+						</ul>
+					</div>
+				<div class="filter-widget mb-0">
+						<h2 class="fw-title">color by</h2>
+						<div class="fw-color-choose">
+							<div class="cs-item">
+								<input type="radio" name="cs" id="gray-color">
+								<label class="cs-gray" for="gray-color">
+									<span>(3)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="orange-color">
+								<label class="cs-orange" for="orange-color">
+									<span>(25)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="yollow-color">
+								<label class="cs-yollow" for="yollow-color">
+									<span>(112)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="green-color">
+								<label class="cs-green" for="green-color">
+									<span>(75)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="purple-color">
+								<label class="cs-purple" for="purple-color">
+									<span>(9)</span>
+								</label>
+							</div>
+							<div class="cs-item">
+								<input type="radio" name="cs" id="blue-color">
+								<label class="cs-blue" for="blue-color">
+									<span>(29)</span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="filter-widget mb-0">
+						<h2 class="fw-title">refine by</h2>
+						<div class="price-range-wrap">
+							<h4>Price</h4>
+                            <div  class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content" data-min="500" data-max="5000">
+								<div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div>
+								<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;">
+								</span>
+								<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;">
+								</span>
+							</div>
+							<div class="range-slider">
+                                <div  class="price-input">
+                                    <input type="text" id="minamount">
+                                    <input type="text" id="maxamount">
+                                </div>
+                            </div>
+                        </div>
+					</div>
+
+
+
+					<div class="filter-widget mb-0">
+						<h2 class="fw-title">Screen Size</h2>
+						<div class="fw-size-choose">
+							<div class="sc-item">
+								<input type="radio" name="sc" id="xs-size">
+								<label for="xs-size">12.3"</label>
+							</div>
+							<div class="sc-item">
+								<input type="radio" name="sc" id="s-size">
+								<label for="s-size">15"</label>
+							</div>
+							<div class="sc-item">
+								<input type="radio" name="sc" id="m-size"  checked="">
+								<label for="m-size">15.6"</label>
+							</div>
+							<div class="sc-item">
+								<input type="radio" name="sc" id="l-size">
+								<label for="l-size">17.3"</label>
+							</div>
+							<div class="sc-item">
+								<input type="radio" name="sc" id="xl-size">
+								<label for="xl-size">17.5"</label>
+							</div>
+							<div class="sc-item">
+								<input type="radio" name="sc" id="xxl-size">
+								<label for="xxl-size">21.5"</label>
+							</div>
+						</div>
+					</div>
+					<div class="filter-widget">
+						<h2 class="fw-title">Brand</h2>
+						<ul class="category-menu">
+							<li><a href="#">IMAC<span>(56)</span></a></li>
+							<li><a href="#">Lenovo<span>(2)</span></a></li>
+							<li><a href="#">Samsung<span>(36)</span></a></li>
+							<li><a href="#">Acer<span>(27)</span></a></li>
+							<li><a href="#">HP<span>(19)</span></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-9  order-1 order-lg-2 mb-5 mb-lg-0">
+					<div class="row">
+						<div class="col-lg-4 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+									<div class="tag-sale">ON SALE</div>
+									<a href="IMAC.html"><img src="https://static.bhphoto.com/images/multiple_images/images500x500/1558538199_IMG_1187929.jpg" alt=""></a>
+									<div class="pi-links">
+										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<h6>$4,999.99</h6>
+									<p>IMAC Pro Retina 5K</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+									<a href="#"><img src="img/product/1562242545_IMG_1212353.jpg"alt=""></a>
+									<div class="pi-links">
+										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<h6>$1,328</h6>
+									<p>HP 23.8" EliteOne 800 G5</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+									<a href="#"><img src="img/product/1579792530_IMG_1308711.jpg" alt=""></a>
+									<div class="pi-links">
+										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<h6>$899</h6>
+									<p>Acer 27" Aspire C27</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+								<a href="#"><img src="img/product/1577381434_IMG_1295722.jpg" alt=""></a>
+									<div class="pi-links">
+										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<h6>$2.549,00</h6>
+									<p>Lenovo X1 Carbon Gen7</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+									<a href="#"><img src="img/product/1527511560_IMG_994983.jpg" alt=""></a>
+									<div class="pi-links">
+										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<h6>$849</h6>
+									<p>HP 23.8" 24-f0060 Multi-Touch</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+									<a href="#"><img src="img/product/1566315130_IMG_1238590.jpg" alt=""></a>
+									<div class="pi-links">
+										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<h6>$929</h6>
+									<p>Dell 21.5" OptiPlex 5000 Series 5270</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+									<a href="#"><img src="img/product/1538582561_IMG_1069368.jpg" alt=""></a>
+									<div class="pi-links">
+										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<h6>$3,499</h6>
+									<p>Microsoft 28" Surface Studio 2 Multi-Touch</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+									<a href="#"><img src="img/product/1530270914_IMG_1017134.jpg" alt=""></a>
+									<div class="pi-links">
+										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<h6>$599</h6>
+									<p>ASUS 15.6" V161GA Multi-Touch</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+									<a href="#"><img src="img/product/1563193039_IMG_1217524.jpg" alt=""></a>
+									<div class="pi-links">
+										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<h6>$732</h6>
+									<p>HP 21.5" ProOne 600 G5</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+									<div class="tag-new">new</div>
+									<a href="#"><img src="img/product/1584637211_IMG_1332741.jpg" alt=""></a>
+									<div class="pi-links">
+										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<h6>$1,236</h6>
+									<p>Lenovo ThinkCentre M920Z/ i5-9400/</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+									<a href="#"><img src="img/product/1579791663_IMG_1308692.jpg" alt=""></a>
+									<div class="pi-links">
+										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<h6>$749</h6>
+									<p>Acer i5/AIO-9400T</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+									<a href="#"><img src="img/product/1563193898_IMG_1217552.jpg" alt=""></a>
+									<div class="pi-links">
+										<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+										<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<h6>$1,578</h6>
+									<p>HP 23.8" EliteOne 800 G5 Multi-Touch</p>
+								</div>
+							</div>
+						</div>
+						<div class="text-center w-100 pt-3">
+							<button class="site-btn sb-line sb-dark">LOAD MORE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Category section end -->
+
+
+	<!-- Footer section -->
+	 <footer class="page-footer font-small stylish-color-dark pt-4 navbar-dark bg-dark">
+
+  <div class="container text-center text-md-left">
+
+    <div class="row">
+
+      <div class="col-md-4 mx-auto">
+
+       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
+        <p>Prices, specifications, and images are subject to change without notice. Not responsible for typographical or illustrative errors. Manufacturer rebates, terms, conditions, and expiration dates are subject to manufacturers printed forms NYC DCA Lic.: Elec. Store #0906712 Elec. & Home App. Serv. Deal. #0907905; Sec. Hd. Deal. Gen. #0907906
+        </p>
+
+      </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <div class="col-md-2 mx-auto">
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">...</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Computer</a>
+          </li>
+          <li>
+            <a href="#!">Laptop</a>
+          </li>
+          <li>
+            <a href="#!">Computer Aksesuar</a>
+          </li>
+          <li>
+            <a href="#!">Phone</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <div class="col-md-2 mx-auto">
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">...</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Best saler</a>
+          </li>
+          <li>
+            <a href="#!">Phone Aksesuar</a>
+          </li>
+          <li>
+            <a href="#!">Soundbar speakers</a>
+          </li>
+          <li>
+            <a href="#!">Console Gaming</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+
+      <div class="col-md-2 mx-auto">
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">...</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">TV Aksesuar</a>
+          </li>
+          <li>
+            <a href="#!">Microphones</a>
+          </li>
+          <li>
+            <a href="#!">Audio for video</a>
+          </li>
+          <li>
+            <a href="#!">Studio recording</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <hr>
+
+
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register for free</h5>
+    </li>
+    
+ <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+    Login
+  </button>  
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content"style="background: #ff512f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff512f, #dd2476); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff512f, #dd2476);">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        <div class="form-title text-center" >
+          <h4>Log in</h4>
+        </div>
+        <div class="d-flex flex-column text-center" >
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password1" placeholder="Your password...">
+            </div>
+            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+          </form>
+          
+          <div class="text-center text-muted delimiter">or use a social network</div>
+          <div class="d-flex justify-content-center social-buttons">
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </button>
+            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+              <i class="fab fa-linkedin"></i>
+            </button>
+          </di>
+        </div>
+      </div>
+    </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+      </div>
+  </div>
+</div>
+    
+    </div>
+    
+
+  <hr>
+    
+    <div class="social-icons">
+  <a class="social-icon social-icon--codepen">
+    <i class="fa fa-codepen"></i>
+    <div class="tooltip">Codepen</div>
+  </a>
+  <a class="social-icon social-icon--github">
+    <i class="fa fa-github"></i>
+    <div class="tooltip">Github</div>
+  </a>
+  <a class="social-icon social-icon--twitter">
+    <i class="fa fa-twitter"></i>
+    <div class="tooltip">Twitter</div>
+  </a>
+  <a class="social-icon social-icon--dribbble">
+    <i class="fa fa-dribbble"></i>
+    <div class="tooltip">Dribbble</div>
+  </a>
+  <a class="social-icon social-icon--instagram">
+    <i class="fa fa-instagram"></i>
+    <div class="tooltip">Instagram</div>
+  </a>
+  <a class="social-icon social-icon--linkedin">
+    <i class="fa fa-linkedin"></i>
+    <div class="tooltip">LinkedIn</div>
+  </a>
+  <a class="social-icon social-icon--facebook">
+    <i class="fa fa-facebook"></i>
+    <div class="tooltip">Facebook</div>
+  </a>
+</div>
+
+  </div>
+  <!-- Footer Elements -->
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-dark">© SmartShop
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/jquery.zoom.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
