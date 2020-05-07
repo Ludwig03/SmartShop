@@ -192,7 +192,7 @@ body {
 
 a {
   color: #2f889a;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 img {
