@@ -23,11 +23,13 @@
 	<link rel="stylesheet" href="css/animate.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
+	 <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="SmartShop/add-to-cart/assets/css/style.css">
 
-	<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<!--[if lt IE 9]
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	[endif]-->
 
 </head>
 <body>
@@ -72,14 +74,14 @@
 		</div>
 	</div>
 	<div class="navbar navbar-expand-md navbar-info bg-dark justify-content-between">
-		<div class="col-md-auto col-7">
+		<div class="col-md-auto col-6">
            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
  <a class="navbar-brand" href="index.html">
     <img src="https://smartshop.mk/wp-content/uploads/2018/03/Smartshop-logo-master.png" width="180" class="d-inline-block align-top" alt="">
   </a>
 </nav>
         </div>
-        <div class="col-md-9 col-5 d-md-flex justify-content-around">
+        <div class="col-md-auto col-6 d-md-flex justify-content-around">
           <div class="row w-100 justify-content-end mr-2">
           <div class="col-auto">
             <form class="form-inline d-md-inline-block d-none">
@@ -87,6 +89,7 @@
               <button class="btn btn-outline-info" type="submit">Search</button>
             </form>
             </div></div>
+
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               My account
@@ -177,7 +180,7 @@ background: linear-gradient(to right, #ff512f, #f09819);">
 
 
 	<!-- Hero section -->
-	<div id="carouselExampleIndicators" class="carousel slide d-md-block d-none" data-ride="carousel">
+       <div id="carouselExampleIndicators" class="carousel slide d-md-block d-none" data-ride="carousel">
 			  <ol class="carousel-indicators">
 			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -192,11 +195,12 @@ background: linear-gradient(to right, #ff512f, #f09819);">
 			      			<img src="https://cdn.shopify.com/s/files/1/0199/9106/products/cart-iPhone-11Pro-case-clear-removebg-preview_600x600.png?v=1569835262">
 			      		</div>
 			      		<div class="col-md-6">
-			      			<div class="row" style="position: relative;top: 150px;left: 100px;"><h2 class="text-secondary"><a href="iphone11promax.html" style="text-decoration: none;"> IPhone 11 Pro Max</a></h2> </div>
+			      			<div class="row" style="position: relative;top: 150px;left: 100px;"><h2 class="text-secondary">IPhone 11 Pro Max</h2> </div>
 			      			<div class="row" style="position: relative;top: 165px;left: 100px;"> <h3 class="text-secondary">$999.00</h3></div>
-			      			<div class="row">
+			      			<a href="iphone11promax.html" style="text-decoration: none;"><div class="row">
 			      				<button type="button" class="btn btn-outline-dark col-md-3 d-none d-md-block" style="position: relative;top: 180px;left: 100px;">Add To Card &nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart"></i></button>
-			      			</div>
+
+			      			</div></a>
 			      		</div>
 			      	</div>
 			    </div>
@@ -210,9 +214,9 @@ background: linear-gradient(to right, #ff512f, #f09819);">
 			      		<div class="col-md-6">
 			      			<div class="row" style="position: relative;top: 150px;left: 100px;"> <h2 class="text-secondary"><a href="galaxys20.html" style="text-decoration: none;"> Galaxy S20</a></h2> </div>
 			      			<div class="row" style="position: relative;top: 165px;left: 100px;"> <h3 class="text-secondary">$999.00</h3></div>
-			      			<div class="row">
+			      		<a href="galaxys20.html"><div class="row">
 			      				<button type="button" class="btn btn-outline-dark col-md-3 d-none d-md-block" style="position: relative;top: 180px;left: 100px;">Add To Card &nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart"></i></button>
-			      			</div>
+			      			</div></a>
 			      		</div>
 			      	</div>
 			    </div>
@@ -227,9 +231,9 @@ background: linear-gradient(to right, #ff512f, #f09819);">
 			      		<div class="col-md-6">
 			      			<div class="row" style="position: relative;top: 150px;left: 100px;"><h2 class="text-secondary"><a href="IMac.html" style="text-decoration: none;"> IMac Pro Retina 5K </a></h2></div>
 			      			<div class="row" style="position: relative;top: 165px;left: 100px;"> <h3 class="text-secondary">$4,999.00</h3></div>
-			      			<div class="row">
+			      		<a href="IMac.html" style="text-decoration: none;">	<div class="row">
 			      				<button type="button" class="btn btn-outline-dark col-md-3 d-none d-md-block" style="position: relative;top: 180px;left: 100px;">Add To Card &nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart"></i></button>
-			      			</div>
+			      			</div></a>
 			      		</div>
 			      	</div>
 			    </div>
@@ -300,7 +304,7 @@ background: linear-gradient(to right, #ff512f, #f09819);">
                   <h5 class="text-center text-warning">IPhone 11 Pro Max</h5>
                   <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
                   <h4 class="text-center text-success">$999.00</h4>
-                  <a class="btn btn-warning mt-2 text-center" href="#">Add To Card</a>
+                  <a class="btn btn-warning mt-2 text-center" href="iphone11promax.html">Add To Card</a>
                 </div>
               </div>
             </div>
@@ -322,7 +326,7 @@ background: linear-gradient(to right, #ff512f, #f09819);">
                   <h5 class="text-center text-warning">IPhone 11 Pro Max</h5>
                   <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
                   <h4 class="text-center text-success">$999.00</h4>
-                  <a class="btn btn-warning mt-2 text-center" href="#">Add To Card</a>
+                  <a class="btn btn-warning mt-2 text-center" href="iphone11promax.html">Add To Card</a>
                 </div>
               </div>
             </div>
@@ -333,7 +337,7 @@ background: linear-gradient(to right, #ff512f, #f09819);">
                   <h5 class="text-center text-warning">IPhone 11 Pro Max</h5>
                   <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
                   <h4 class="text-center text-success">$999.00</h4>
-                  <a class="btn btn-warning mt-2 text-center" href="#">Add To Card</a>
+                  <a class="btn btn-warning mt-2 text-center" href="iphone11promax.html">Add To Card</a>
                 </div>
               </div>
             </div>
@@ -344,7 +348,7 @@ background: linear-gradient(to right, #ff512f, #f09819);">
                   <h5 class="text-center text-warning">IPhone 11 Pro Max</h5>
                   <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
                   <h4 class="text-center text-success">$999.00</h4>
-                  <a class="btn btn-warning mt-2 text-center" href="#">Add To Card</a>
+                  <a class="btn btn-warning mt-2 text-center" href="iphone11promax.html">Add To Card</a>
                 </div>
               </div>
             </div>
@@ -474,7 +478,7 @@ CLICK TO COPY">
                     <h5 class="text-center text-dark">IPhone 11 Pro Max</h5>
       <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
                   <h4 class="text-center text-success">$999.00</h4>
-                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="#">Add to Card</a>
+                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="iphone11promax.html">Add to Card</a>
                   </div>
                 </div>
               </div>
@@ -487,7 +491,7 @@ CLICK TO COPY">
                     <h5 class="text-center text-dark">IPhone 11 Pro Max</h5>
         <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
                   <h4 class="text-center text-success">$999.00</h4>
-                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="#">Add to Card</a>
+                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="iphone11promax.html">Add to Card</a>
                   </div>
                 </div>
               </div>
@@ -500,7 +504,7 @@ CLICK TO COPY">
                     <h5 class="text-center text-dark">IPhone 11 Pro Max</h5>
            <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
                   <h4 class="text-center text-success">$999.00</h4>
-                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="#">Add to Card</a>
+                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="iphone11promax.html">Add to Card</a>
                   </div>
                 </div>
               </div>
@@ -513,7 +517,7 @@ CLICK TO COPY">
                     <h5 class="text-center text-dark">IPhone 11 Pro Max</h5>
           <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
                   <h4 class="text-center text-success">$999.00</h4>
-                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="#">Add to Card</a>
+                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="iphone11promax.html">Add to Card</a>
                   </div>
                 </div>
               </div>
@@ -526,7 +530,7 @@ CLICK TO COPY">
                     <h5 class="text-center text-dark">IPhone 11 Pro Max</h5>
         <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
                   <h4 class="text-center text-success">$999.00</h4>
-                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="#">Add to Card</a>
+                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="iphone11promax.html">Add to Card</a>
                   </div>
                 </div>
               </div>
@@ -539,7 +543,7 @@ CLICK TO COPY">
                     <h5 class="text-center text-dark">IPhone 11 Pro Max</h5>
            <h6 class="text-center text-danger daily-saled-text">$1,449.00</h6>
                   <h4 class="text-center text-success">$999.00</h4>
-                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="#">Add to Card</a>
+                  <a class="btn btn-outline-success mt-2 mx-auto text-center col-12" href="iphone11promax.html">Add to Card</a>
                   </div>
                 </div>
               </div>
@@ -710,6 +714,7 @@ CLICK TO COPY">
   <hr>
     
     <div class="social-icons">
+
   <a class="social-icon social-icon--codepen">
     <i class="fa fa-codepen"></i>
     <div class="tooltip">Codepen</div>

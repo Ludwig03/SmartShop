@@ -23,6 +23,9 @@
 	<link rel="stylesheet" href="css/animate.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
+	  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+      <link rel="stylesheet" href="galaxys20(addtocart)/css/style.css">
+
 
 	<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -72,14 +75,14 @@
 		</div>
 	</div>
 	<div class="navbar navbar-expand-md navbar-info bg-dark justify-content-between">
-		<div class="col-md-auto col-7">
+		<div class="col-md-auto col-3">
            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
  <a class="navbar-brand" href="index.html">
     <img src="https://smartshop.mk/wp-content/uploads/2018/03/Smartshop-logo-master.png" width="180" class="d-inline-block align-top" alt="">
   </a>
 </nav>
         </div>
-        <div class="col-md-9 col-5 d-md-flex justify-content-around">
+        <div class="col-sm-3 col-md-9 col-9 d-md-flex justify-content-around">
           <div class="row w-100 justify-content-end mr-2">
           <div class="col-auto">
             <form class="form-inline d-md-inline-block d-none">
@@ -240,7 +243,43 @@ background: linear-gradient(to right, #ff512f, #f09819);">
 						<p>Quantity</p>
                         <div class="pro-qty"><input type="text" value="1"></div>
                     </div>
-					<a href="#" class="site-btn add-card"><i class="flaticon-bag"></i>&nbsp;Add to Card</a>
+					<div class="text-component text-center">
+    <p class="flex flex-wrap flex-center flex-gap-xxs">
+      <a href="#0" class="cd-add-to-cart js-cd-add-to-cart site-btn add-card" data-price="999"><i class="flaticon-bag"></i>&nbsp;Add to Card</a>
+    </p>
+  </div>
+		<div class="cd-cart cd-cart--empty js-cd-cart">
+			<a href="#0" class="cd-cart__trigger text-replace">
+				<ul class="cd-cart__count"> <!-- cart items count -->
+					<li>0</li>
+					<li>0</li>
+				</ul> <!-- .cd-cart__count -->
+			</a>
+
+			<div class="cd-cart__content">
+				<div class="cd-cart__layout">
+					<header class="cd-cart__header">
+						<h2>Cart</h2>
+						<span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+					</header>
+					
+					<div class="cd-cart__body">
+						<ul>
+							<!-- products added to the cart will be inserted here using JavaScript -->
+						</ul>
+					</div>
+
+					<footer class="cd-cart__footer">
+						<a href="#0" class="cd-cart__checkout">
+		          <em>Checkout - $<span>0</span>
+		            <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
+		            </svg>
+		          </em>
+		        </a>
+					</footer>
+				</div>
+			</div> <!-- .cd-cart__content -->
+		</div> <!-- cd-cart -->
 					<div id="accordion" class="accordion-area">
 						<div class="panel">
 							<div class="panel-header" id="headingOne">
@@ -573,6 +612,9 @@ background: linear-gradient(to right, #ff512f, #f09819);">
 	<script src="js/jquery.zoom.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<script src="galaxys20(addtocart)/js/util.js"></script>
+    <script src="galaxys20(addtocart)/js/main.js"></script> 
 
 	</body>
 </html>
