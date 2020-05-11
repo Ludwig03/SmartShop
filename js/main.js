@@ -1,3 +1,10 @@
+/* =================================
+------------------------------------
+	Divisima | eCommerce Template
+	Version: 1.0
+ ------------------------------------
+ ====================================*/
+
 
 'use strict';
 
@@ -59,27 +66,27 @@ $(window).on('load', function() {
 		Hero Slider
 	--------------------*/
 	var hero_s = $(".hero-slider");
-    hero_s.owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: true,
-        items: 1,
-        dots: true,
-        animateOut: 'fadeOut',
-    	animateIn: 'fadeIn',
-        navText: ['<i class="flaticon-left-arrow-1"></i>', '<i class="flaticon-right-arrow-1"></i>'],
-        smartSpeed: 1200,
-        autoHeight: false,
-        autoplay: true,
-        onInitialized: function() {
-        	var a = this.items().length;
-            $("#snh-1").html("<span>1</span><span>" + a + "</span>");
-        }
-    }).on("changed.owl.carousel", function(a) {
-        var b = --a.item.index, a = a.item.count;
-    	$("#snh-1").html("<span> "+ (1 > b ? b + a : b > a ? b - a : b) + "</span><span>" + a + "</span>");
+	hero_s.owlCarousel({
+		loop: true,
+		margin: 0,
+		nav: true,
+		items: 1,
+		dots: true,
+		animateOut: 'fadeOut',
+		animateIn: 'fadeIn',
+		navText: ['<i class="flaticon-left-arrow-1"></i>', '<i class="flaticon-right-arrow-1"></i>'],
+		smartSpeed: 1200,
+		autoHeight: false,
+		autoplay: true,
+		onInitialized: function() {
+			var a = this.items().length;
+			$("#snh-1").html("<span>1</span><span>" + a + "</span>");
+		}
+	}).on("changed.owl.carousel", function(a) {
+		var b = --a.item.index, a = a.item.count;
+		$("#snh-1").html("<span> "+ (1 > b ? b + a : b > a ? b - a : b) + "</span><span>" + a + "</span>");
 
-    });
+	});
 
 	hero_s.append('<div class="slider-nav-warp"><div class="slider-nav"></div></div>');
 	$(".hero-slider .owl-nav, .hero-slider .owl-dots").appendTo('.slider-nav');
@@ -175,7 +182,7 @@ $(window).on('load', function() {
 	/*-------------------
 		Quantity change
 	--------------------- */
-    var proQty = $('.pro-qty');
+	var proQty = $('.pro-qty');
 	proQty.prepend('<span class="dec qtybtn">-</span>');
 	proQty.append('<span class="inc qtybtn">+</span>');
 	proQty.on('click', '.qtybtn', function () {
@@ -216,18 +223,3 @@ $(window).on('load', function() {
 
 
 })(jQuery);
-
-window.onload = function(){
-  var paginationPage = parseInt($('.cdp').attr('actpage'), 10);
-  $('.cdp_i').on('click', function(){
-    var go = $(this).attr('href').replace('#!', '');
-    if (go === '+1') {
-      paginationPage++;
-    } else if (go === '-1') {
-      paginationPage--;
-    }else{
-      paginationPage = parseInt(go, 10);
-    }
-    $('.cdp').attr('actpage', paginationPage);
-  });
-};
