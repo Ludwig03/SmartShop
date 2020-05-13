@@ -60,11 +60,91 @@
 							<button><i class="flaticon-search"></i></button>
 						</form>
 					</div>
-					<div class="col-xl-4 col-lg-5">
+					<div class="col-xl-4 csol-lg-5">
 						<div class="user-panel">
 							<div class="up-item">
 								<i class="flaticon-profile"></i>
-								<a href="#">Sign</a> In or <a href="#">Create Account</a>
+
+								<!-- Button trigger modal -->
+								<button class="glow-on-hover" type="button" data-toggle="modal" data-target="#exampleModal">
+									Sign in/up
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div  style=" background: #de6161; /* fallback for old browsers */
+										  background: -webkit-linear-gradient(to right, #de6161, #2657eb); /* Chrome 10-25, Safari 5.1-6 */
+										  background: linear-gradient(to right, #de6161, #2657eb);" class="modal-content">
+
+											<div class="modal-body" >
+												<div class="box">
+
+													<div class="section-title">
+														<span class="txt anim-text-flow">Sign in</span>
+													</div>
+
+													<div class="input">
+														<label for="name">Username</label>
+														<input type="text" name="name" id="name">
+														<span class="spin"></span>
+													</div>
+
+													<div class="input">
+														<label for="pass">Password</label>
+														<input type="password" name="pass" id="pass">
+														<span class="spin"></span>
+													</div>
+
+													<div class="button login">
+														<a href="profile.html"
+														<button class="glow-on-hover" type="button">
+															 <h5 style="color:#9ee7f4;margin-top:10px;text-align:center;">Sign in</h5>
+														</button>
+														</a>
+													</div>
+
+													<a href="" class="pass-forgot">Forgot your password?</a>
+
+												</div>
+
+												<div class="overbox">
+													<div class="material-button alt-2"><span class="shape"></span></div>
+
+													<div class="title">
+														<span class=" txt anim-text-flow">Sign in</span>
+													</div>
+
+													<div class="input">
+														<label for="regname">Username</label>
+														<input type="text" name="regname" id="regname">
+														<span class="spin"></span>
+													</div>
+
+													<div class="input">
+														<label for="regpass">Password</label>
+														<input type="password" name="regpass" id="regpass">
+														<span class="spin"></span>
+													</div>
+
+													<div class="input">
+														<label for="reregpass">Repeat Password</label>
+														<input type="password" name="reregpass" id="reregpass">
+														<span class="spin"></span>
+													</div>
+
+													<div class="button login">
+														<a href="profile.html"
+														<button class="glow-on-hover" type="button">
+															<h5 style="color:#9ee7f4;margin-top:10px;text-align:center;">Sign up</h5>
+														</button>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="up-item">
 								<div class="shopping-card">
@@ -232,7 +312,7 @@ background: linear-gradient(to right, #ff512f, #f09819);">
   background: linear-gradient(to right, #3a6186, #89253e);" class="top-letest-product-section">
 		<div class="container">
 			<div class="section-title">
-					<span class="txt anim-text-flow">LATEST PRODUCTS</span>
+				<span class="txt anim-text-flow">LATEST PRODUCTS</span>
 			</div>
 			<div class="product-slider owl-carousel">
 				<div class="product-item">
