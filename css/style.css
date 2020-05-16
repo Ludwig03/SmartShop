@@ -77,7 +77,7 @@ ol {
 
 .section-title {
 	text-align: center;
-	font-size: xxx-large;
+	font-size: xx-large;
 
 }
 
@@ -92,7 +92,7 @@ ol {
 }
 
 .spad {
-	padding-top: 105px;
+	padding-top: 5px;
 	padding-bottom: 105px;
 }
 
@@ -778,10 +778,6 @@ ol {
 	padding-bottom: 60px;
 }
 
-.top-letest-product-section .section-title {
-	margin-bottom: 70px;
-}
-
 .product-slider .owl-nav {
 	position: absolute;
 	top: calc(50% - 60px);
@@ -1197,7 +1193,7 @@ ol {
 
 .page-top-info {
 	background: #f8f7f7;
-	padding: 60px 0 70px;
+	padding: 20px 0 30px;
 }
 
 .page-top-info h4 {
@@ -1486,12 +1482,12 @@ ol {
 ------------------*/
 
 .product-section {
-	padding-top: 70px;
+	padding-top: 40px;
 	padding-bottom: 65px;
 }
 
 .back-link {
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 .back-link a {
@@ -1603,7 +1599,6 @@ ol {
 }
 
 .product-details .fw-size-choose label {
-	width: 33px;
 	height: 33px;
 	font-size: 12px;
 	border: 2px solid #414141;
@@ -2431,10 +2426,8 @@ ol {
 .cdp {
   position: relative;
   text-align: center;
-  padding: 20px 0;
   font-size: 0;
   z-index: 6;
-  margin: 50px 0;
   animation: cdp-in 500ms ease both;
   animation-timeout: 200ms;
 }
